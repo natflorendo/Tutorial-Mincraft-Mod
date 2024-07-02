@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Forge_1.20.6.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Forge_1.20.6.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Forge_1.20.6.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Forge_1.20.6.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.examplemod.Forge_1.20.6.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.examplemod.Forge_1.20.6.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.examplemod.Forge_1.20.6.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.examplemod.Forge_1.20.6.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.natflorendo.tutorialmod.Forge_1.20.6.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.natflorendo.tutorialmod.Forge_1.20.6.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.natflorendo.tutorialmod.Forge_1.20.6.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.natflorendo.tutorialmod.Forge_1.20.6.test.iml" />
     </modules>
