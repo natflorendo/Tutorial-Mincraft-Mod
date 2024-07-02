@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component>
+  <configuration default="false" factoryName="Application" name="runData" singleton="false" type="Application">
+    <option name="MAIN_CLASS_NAME" value="net.minecraftforge.bootstrap.ForgeBootstrap"/>
+    <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Djava.net.preferIPv6Addresses=system"/>
+    <option name="PROGRAM_PARAMETERS" value="--launchTarget forge_userdev_data --assetIndex 16 --assetsDir /Users/nathan/.gradle/caches/forge_gradle/assets --gameDir . --mod tutorial-mod --all --output &quot;/Users/nathan/Repositories/Forge 1.20.6/src/generated/resources&quot; --existing &quot;/Users/nathan/Repositories/Forge 1.20.6/src/main/resources&quot;"/>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run-data"/>
+    <module name="Forge_1.20.6.main"/>
+    <envs>
+      <env name="MOD_CLASSES" value="$PROJECT_DIR$/build/sourcesSets/main"/>
+      <env name="MCP_MAPPINGS" value="parchment_2024.06.23-1.21"/>
+    </envs>
+    <method v="2">
+      <option enabled="true" name="Make"/>
+      <option enabled="true" externalProjectPath="$PROJECT_DIR$" name="Gradle.BeforeRunTask" tasks=":prepareRunDataCompile"/>
+    </method>
+  </configuration>
+</component>
