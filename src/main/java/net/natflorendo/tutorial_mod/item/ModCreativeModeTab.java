@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.natflorendo.tutorial_mod.TutorialMod;
+import net.natflorendo.tutorial_mod.block.ModBlocks;
 
 public class ModCreativeModeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -27,6 +28,9 @@ public class ModCreativeModeTab {
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
 
                         pOutput.accept(Items.DIAMOND);
+
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                     })
                     .build());
 }
