@@ -1,0 +1,11 @@
+to see all minecraft recipes:
+
+
+External Libraries < Gradle: net.minecraft:client:extra:1.20.6
+< data < minecraft < recipes
+
+
+Right now we don't know tag, so if you see a recipe with a tag,
+just change it to item with your mod item instead
+
+discovered item tag for result doesn't work in 1.20.6 (you have to use id instead)
