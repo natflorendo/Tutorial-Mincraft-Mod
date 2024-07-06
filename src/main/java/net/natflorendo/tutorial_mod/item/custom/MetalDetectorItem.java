@@ -3,7 +3,9 @@ package net.natflorendo.tutorial_mod.item.custom;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -29,8 +31,8 @@ public class MetalDetectorItem extends Item {
             boolean foundBlock = false;
 
             //check if there is a valuable block in the XZ coordinate
-            for(int i = 0; i <= positionClicked.getY(); i++) {
-                BlockState state = pContext.getLevel().getBlockState(pContext.getClickedPos());
+            for(int i = 0; i <= positionClicked.getY() + 240; i++) {
+                BlockState state = pContext.getLevel().getBlockState(positionClicked.below(i));
                 if(isValueableBlock(state)) {
                     outputValuableCoordinates(positionClicked.below(i), player, state.getBlock());
                     foundBlock = true;
@@ -45,8 +47,11 @@ public class MetalDetectorItem extends Item {
         }
 
         //damage item for using it
-        pContext.getItemInHand().hurtAndBreak(1, Objects.requireNonNull(player),
-                LivingEntity.getSlotForHand(pContext.getHand()));
+//        pContext.getItemInHand().hurtAndBreak(1, Objects.requireNonNull(player),
+//                LivingEntity.getSlotForHand(pContext.getHand()));
+
+        var handUsed = pContext.getHand() == InteractionHand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND;
+        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), handUsed);
 
         return InteractionResult.SUCCESS;
     }
