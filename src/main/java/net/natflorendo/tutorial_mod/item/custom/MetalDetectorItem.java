@@ -47,9 +47,6 @@ public class MetalDetectorItem extends Item {
         }
 
         //damage item for using it
-//        pContext.getItemInHand().hurtAndBreak(1, Objects.requireNonNull(player),
-//                LivingEntity.getSlotForHand(pContext.getHand()));
-
         var handUsed = pContext.getHand() == InteractionHand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND;
         pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), handUsed);
 
