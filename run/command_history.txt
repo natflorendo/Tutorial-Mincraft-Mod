@@ -1,1 +1,20 @@
 /time set 0
+/give @a minecraft:iron_pickaxe
+/gamemode survival
+/gamemode c
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/loot spawn ~ ~ ~ loot tutorial_mod:blocks/sapphire_block
+/loot spawn ~ ~ ~ loot tutorial_mod:blocks/raw_sapphire_block
+/loot spawn ~ ~ ~ loot tutorial_mod:blocks/sapphire_block
+/loot spawn ~ ~ ~ loot tutorial_mod:blocks/raw_sapphire_block
+/loot spawn ~ ~ ~ loot tutorial_mod:blocks/sapphire_block
+/give @a minecraft:stone_axe
+/loot spawn ~ ~ ~ loot tutorial_mod:blocks/sapphire_block
+/give @a minecraft:diamond_pickaxe
+/loot spawn ~ ~ ~ loot tutorial_mod:blocks/sapphire_block
+/gamemode creative
+/time set 0
+/gamemode survival

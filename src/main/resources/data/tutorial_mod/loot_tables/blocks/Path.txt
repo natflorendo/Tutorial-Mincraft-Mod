@@ -1,0 +1,5 @@
+to see all minecraft loot_tables:
+
+
+External Libraries < Gradle: net.minecraft:client:extra:1.20.6
+< data < minecraft < loot_tables
